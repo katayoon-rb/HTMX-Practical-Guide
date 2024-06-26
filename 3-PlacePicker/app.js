@@ -8,8 +8,8 @@ function getSuggestedLocations() {
     (location) => !INTERESTING_LOCATIONS.includes(location)
   );
   if (availableLocations.length < 2) {
-    return availableLocations;
-  }
+    return availableLocations
+  };
 
   const suggestedLocation1 = availableLocations.splice(
     Math.floor(Math.random() * availableLocations.length),
