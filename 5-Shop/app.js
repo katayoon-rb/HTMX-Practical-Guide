@@ -1,6 +1,6 @@
 import express from "express";
 import PRODUCTS from "./products.js";
-
+ 
 const app = express();
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
